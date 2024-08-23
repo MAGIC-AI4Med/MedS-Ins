@@ -1,11 +1,11 @@
 # MedS-Ins
 The official codes for "Towards Evaluating and Building Versatile Large Language Models for Medicine"
 
-[Paper]()
+[Paper](https://arxiv.org/abs/2408.12547)
 
 [Leaderboard](https://henrychur.github.io/MedS-Bench/)
 
-Datasets: [MedS-Ins](), [MedS-Bench]()
+Datasets: [MedS-Ins](https://huggingface.co/datasets/Henrychur/MedS-Ins), [MedS-Bench](https://huggingface.co/datasets/Henrychur/MedS-Bench)
 
 :construction: **_This Repo is updating now, coming soon!_** :construction:
 
@@ -21,9 +21,14 @@ To foster further advancements in applying LLMs to clinical challenges, we have 
 
 ---
 
+## News
+
+[2024.8.23] Our pre-print paper is released ArXiv. Dive into our findings [here](https://arxiv.org/abs/2408.12547).
+
+---
 
 ## Data
-## Data Format
+### Data Format
 For each task we need a json file like following:
 ```
 {
@@ -59,9 +64,30 @@ Negative Examples: All typical fail cases, explanation is neccessary per case wh
 Instances: main instances;
 ```
 
-## MedS-Bench Description
+### MedS-Bench Description
 To evaluate the capabilities of various LLMs in clinical applications, we developed MedS-Bench, a comprehensive medical benchmark that extends beyond traditional multiple-choice questions. MedS-Bench encompasses 11 high-level clinical task categories, derived from 39 existing datasets.
 
+<p align="center">
+  <img src="assets/MedS-Bench.svg" alt="MedS-Bench Overview" title="MedS-Bench Overview" width="800"/>
+</p>
 
-## MedS-Ins Description
+### MedS-Ins Description
 To enhance the fine-tuning of LLMs for various downstream clinical tasks, we introduce MedS-Ins, a carefully curated dataset designed to encompass a wide range of medical language processing tasks. This dataset is compiled from five distinct text sources, spanning 19 task categories and 122 unique clinical tasks.
+
+<p align="center">
+  <img src="assets/MedS-Ins.svg" alt="MedS-Ins Overview" title="MedS-Ins Overview" width="800"/>
+</p>
+
+
+## Citation
+```
+@misc{wu2024evaluatingbuildingversatilelarge,
+      title={Towards Evaluating and Building Versatile Large Language Models for Medicine}, 
+      author={Chaoyi Wu and Pengcheng Qiu and Jinxin Liu and Hongfei Gu and Na Li and Ya Zhang and Yanfeng Wang and Weidi Xie},
+      year={2024},
+      eprint={2408.12547},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2408.12547}, 
+}
+```
