@@ -7,6 +7,8 @@ The official codes for "Towards Evaluating and Building Versatile Large Language
 
 Datasets: [MedS-Ins](https://huggingface.co/datasets/Henrychur/MedS-Ins), [MedS-Bench](https://huggingface.co/datasets/Henrychur/MedS-Bench)
 
+Models: [MMedS-Llama3-8B](https://huggingface.co/Henrychur/MMedS-Llama-3-8B)
+
 :construction: **_This Repo is updating now, coming soon!_** :construction:
 
 ---
