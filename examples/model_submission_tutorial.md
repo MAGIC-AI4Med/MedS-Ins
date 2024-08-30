@@ -24,7 +24,7 @@ Your submission should include:
   - `input`: Your input to the LLM.
   - `GT`: The ground truth output from MedS-Bench.
   - `output`: The output from your LLM.
-  - Example file: [eval_results_Rationale_1_context_1_oriINS_MMedS-Llama 3.csv](./eval_results_Rationale_1_context_1_oriINS_MMedS-Llama 3.csv), which demonstrates results for the MMedS-Llama 3 on Rationale tasks.
+  - Example file: [eval_results_Rationale_1_context_1_oriINS_MMedS-Llama 3.csv](https://github.com/MAGIC-AI4Med/MedS-Ins/blob/main/examples/eval_results_Rationale_1_context_1_oriINS_MMedS-Llama%203.csv), which demonstrates results for the MMedS-Llama 3 on Rationale tasks.
 
 ## Removal from the Leaderboard
 
