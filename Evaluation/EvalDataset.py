@@ -31,7 +31,6 @@ import random
 from typing import Dict, Optional, Sequence
 
 IGNORE_INDEX = -100
-MAX_SAMPLE_CNT = 100
 
 Role = Literal["system", "user", "assistant"]
 
@@ -93,7 +92,7 @@ class InsDataset(Dataset):
             with open(root_path + '/' + task_json, 'r', encoding='utf-8') as f:
                 data = json.load(f)
                 Instances = data["Instances"]
-                for index in range(0, min(len(Instances), MAX_SAMPLE_CNT)):
+                for index in range(0, len(Instances)):
                     self.Instances.append(
                         {
                             'task_id': Ins_tt_id,
