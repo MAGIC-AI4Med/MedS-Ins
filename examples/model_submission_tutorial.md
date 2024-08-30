@@ -26,6 +26,8 @@ Your submission should include:
   - `output`: The output from your LLM.
   - Example file: [eval_results_Rationale_1_context_1_oriINS_MMedS-Llama 3.csv](https://github.com/MAGIC-AI4Med/MedS-Ins/blob/main/examples/eval_results_Rationale_1_context_1_oriINS_MMedS-Llama%203.csv), which demonstrates results for the MMedS-Llama 3 on Rationale tasks.
 
+Please email the required information to Chaoyi Wu at wtzxxxwcy02@sjtu.edu.cn or Pengcheng Qiu at henrychur@sjtu.edu.cn. Use the subject line format: "[MedS-Bench Submission] - Name_of_model".
+
 ## Removal from the Leaderboard
 
 If you wish to remove your model's scores from the leaderboard, please send an email to our support team. Removals will be processed during the next leaderboard update.
