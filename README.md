@@ -66,6 +66,7 @@ Negative Examples: All typical fail cases, explanation is neccessary per case wh
 Instances: main instances;
 ```
 
+**We strongly acknowledge any volunteer to contribute data into our dataset. You can check the DATA_Contributor directory to see how to contribute data and we will thank each participant in writing in next updating of our paper!**
 ### MedS-Bench Description
 To evaluate the capabilities of various LLMs in clinical applications, we developed MedS-Bench, a comprehensive medical benchmark that extends beyond traditional multiple-choice questions. MedS-Bench encompasses 11 high-level clinical task categories, derived from 39 existing datasets.
 
