@@ -25,6 +25,8 @@ To foster further advancements in applying LLMs to clinical challenges, we have 
 
 ## News
 
+[2024.9.05] A new version of paper is updated, where we considered more test samples and corrected some statistical values. 
+
 [2024.8.23] Our pre-print paper is released ArXiv. Dive into our findings [here](https://arxiv.org/abs/2408.12547).
 
 ---
