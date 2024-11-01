@@ -32,9 +32,6 @@ Dialog = Sequence[Message]
 #         return dialog_str
 
 class ChatFormat:
-    def __init__(self, tokenizer):
-        self.tokenizer = tokenizer
-
     def encode_header(self, message: Message) -> List[int]:
         strr = "<|start_header_id|>"
         strr = strr + message["role"] + "<|end_header_id|>" + "\n\n"
