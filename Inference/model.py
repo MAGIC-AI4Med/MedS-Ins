@@ -16,20 +16,41 @@ class Message(TypedDict):
 
 Dialog = Sequence[Message]
 
+# class ChatFormat:
+#     def encode_header(self, message: Message) -> str:
+#         return f"{message['role']}\n\n"
+
+#     def encode_message(self, message: Message) -> str:
+#         header = self.encode_header(message)
+#         return f"{header}{message['content'].strip()}"
+
+#     def encode_dialog_prompt(self, dialog: Dialog) -> str:
+#         dialog_str = ""
+#         for message in dialog:
+#             dialog_str += self.encode_message(message)
+#         dialog_str += self.encode_header({"role": "assistant", "content": ""})
+#         return dialog_str
+
 class ChatFormat:
-    def encode_header(self, message: Message) -> str:
-        return f"{message['role']}\n\n"
+    def __init__(self, tokenizer):
+        self.tokenizer = tokenizer
 
-    def encode_message(self, message: Message) -> str:
-        header = self.encode_header(message)
-        return f"{header}{message['content'].strip()}"
+    def encode_header(self, message: Message) -> List[int]:
+        strr = "<|start_header_id|>"
+        strr = strr + message["role"] + "<|end_header_id|>" + "\n\n"
+        return strr
 
-    def encode_dialog_prompt(self, dialog: Dialog) -> str:
-        dialog_str = ""
+    def encode_message(self, message: Message) -> List[int]:
+        strr = self.encode_header(message)
+        strr = strr + message["content"].strip()+"<|eot_id|>"
+        return strr
+
+    def encode_dialog_prompt(self, dialog: Dialog) -> List[int]:
+        strr = "<|begin_of_text|>"
         for message in dialog:
-            dialog_str += self.encode_message(message)
-        dialog_str += self.encode_header({"role": "assistant", "content": ""})
-        return dialog_str
+            strr = strr + self.encode_message(message)
+        strr = strr + self.encode_header({"role": "assistant", "content": ""})
+        return strr
 
 class MedS_Llama3:
     def __init__(self, model_path: str, gpu_id: int = 0):
