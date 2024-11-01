@@ -81,8 +81,8 @@ class MedS_Llama3:
         if len(history) > 0:
             raise NotImplementedError("The model does not support multi-turn conversation.")
         
-        formatted_query = f"Input:\n{query}\nOutput:\n"
-        input_sentence = self.__build_inputs_for_llama3(formatted_query, instruction)
+        # formatted_query = f"Input:\n{query}\nOutput:\n"
+        input_sentence = self.__build_inputs_for_llama3(query, instruction)
         
         input_tokens = self.tokenizer(
             input_sentence,
