@@ -9,7 +9,6 @@ Datasets: [MedS-Ins](https://huggingface.co/datasets/Henrychur/MedS-Ins), [MedS-
 
 Models: [MMedS-Llama3-8B](https://huggingface.co/Henrychur/MMedS-Llama-3-8B)
 
-:construction: **_This Repo is updating now, coming soon!_** :construction:
 
 ---
 
