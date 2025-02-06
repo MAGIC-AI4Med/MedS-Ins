@@ -1,7 +1,9 @@
 # MedS-Ins
 The official codes for "Towards Evaluating and Building Versatile Large Language Models for Medicine"
 
-[Paper](https://arxiv.org/abs/2408.12547)
+[Paper (arxiv)](https://arxiv.org/abs/2408.12547)
+
+[Paper (npj digital medicine)](https://www.nature.com/articles/s41746-024-01390-4)
 
 [Leaderboard](https://henrychur.github.io/MedS-Bench/)
 
