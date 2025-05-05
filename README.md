@@ -1,5 +1,5 @@
 # MedS-Ins
-The official codes for "Towards Evaluating and Building Versatile Large Language Models for Medicine"
+[NPJ Digital Medicine] The official codes for "Towards Evaluating and Building Versatile Large Language Models for Medicine"
 
 [Paper (arxiv)](https://arxiv.org/abs/2408.12547)
 
